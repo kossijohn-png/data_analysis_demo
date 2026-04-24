@@ -1,0 +1,23 @@
+#La base de donné "heart" est un Ensemble de données sur les maladies cardiaques
+#Comporte 1025 ligne et 15 colonnes
+
+#DESCRIPTION DE LA VARIABLE AGE
+#Age minimum 29 ans
+SELECT MIN(age)
+FROM heart ;
+
+#Age Maximum 77 ans
+SELECT MAX(age)
+FROM heart ;
+
+SELECT DISTINCT sex
+FROM heart;
+
+#DESCRIPTION DE LA VARIABLE SEXE
+#Extraire la base de donné des hommes uniquement
+SELECT * FROM heart
+WHERE sex=1;
+
+#Extraire la base de donné des femmes uniquement
+SELECT * FROM heart
+WHERE sex=0;
